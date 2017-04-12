@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="attributes.ListenerExample"/>
+<listener class-name="attributes.AnnotationExample"/>
+</listeners>
+	<parameter name="password" value="crmsfa"></parameter>
+	<parameter name="url" value="http://leaftaps.com"></parameter>
+	<parameter name="userName" value="DemoCSR"></parameter>
+	<test name="Test">
+		<classes>
+			<class name="leaf.Lead.CreateLead" />
+				<class name="leaf.Lead.EditLead" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
